@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Halaman Kontak Saya</title>
+</head>
+<style>
+	body {
+		background-image: url("./image/purpleflower.jpg"); /* gambar untuk background pertama */
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		color: #ffffff;	
+	  }
+	  
+	h1 {
+		background-color: #ffffff; /* warna background kedua */
+		color: #000000; /* warna font putih */
+		padding: 10px; /* jarak antara teks dengan background */
+	  }	  
+	img {
+		display: block;
+		/*float: left; /* mengatur posisi gambar ke kiri halaman */
+		margin: 10px; /* memberikan jarak antara gambar dengan teks */
+		max-width: 200px;
+		height: auto;
+		border-radius: 10px;
+		box-shadow: 0px 0px 10px #ffffffab;
+	}
+	/* CSS untuk form kontak */
+#contact {
+    background-color: #1b1a1a41;
+    padding: 50px;
+    text-align: center;
+  }
+  
+  #contact h1 {
+    margin-bottom: 30px;
+  }
+  
+  #contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #contact label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  #contact input,
+  #contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  #contact textarea {
+    height: 200px;
+  }
+  
+  #contact button[type="submit"] {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  #contact button[type="submit"]:hover {
+    background-color: #f7f7f7;
+    color: #333;
+    border: 2px solid #333;
+  } 
+</style>
+<body>
+	<div class="container">
+		<h1>Contact Saya
+		</h1>
+</body>
+
+<!-- HTML untuk form kontak -->
+<section id="contact">
+    <form>
+		<div class="container">
+		</div>
+      <label for="name">Email</label>
+      <input type="text" id="name" name="name" required>
+  
+      <label for="email">Nama Lengkap</label>
+      <input type="email" id="email" name="email" required>
+  
+      <label for="subject">Subjek Email</label>
+      <input type="text" id="subject" name="subject" required>
+  
+      <label for="message">Isi Pesan</label>
+      <textarea id="message" name="message" required></textarea>
+  
+      <button type="submit">Kirim Email</button>
+    </form>
+  </section>
+  <footer>
+	<p>Hak Cipta &copy; 2023 Halaman Contact Saya</p>
+</footer>
+</body>
+</html>
